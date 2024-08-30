@@ -5,8 +5,8 @@ import {TypeAnimation} from "react-type-animation";
 export const HeroSection = () => {
     return (
         <section>
-            <div className='grid grid-cols-1 sm:grid-cols-12 items-center'>
-                <div className='col-span-7 text-center sm:text-left'>
+            <div className='grid grid-cols-1 sm:grid-cols-12 justify-items-center md:justify-items-stretch items-center'>
+                <div className='col-span-8 text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
                         <span className='text-transparent block bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Привет! Я {'\n'}</span>
                         <TypeAnimation
@@ -31,7 +31,7 @@ export const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className='col-span-5 mt-5'>
+                <div className='col-span-4 mt-5'>
                     <Image
                         className='rounded-lg mt-4 lg:mt-0'
                         src='/images/photo.jfif'
