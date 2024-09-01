@@ -16,7 +16,7 @@ const projectsData: IProject[] = [
 export const ProjectsSection = () => {
   return (
     <>
-      <h2 id='projects' className="text-4xl font-bold mb-8">Мои проекты</h2>
+      <h2 id='projects' className="text-4xl font-bold mb-8 text-white">Мои проекты</h2>
       <div>
         {projectsData.map((project) => (
           <ProjectCard

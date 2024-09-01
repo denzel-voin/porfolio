@@ -40,8 +40,8 @@ export const EmailSection = forwardRef((props, ref: ForwardedRef<any>) => {
   return (
       <section id='contacts' ref={ref} className="grid md:grid-cols-2 my-12 md:my-12 gap-4 relative">
         <div>
-          <h5 className="text-4xl font-bold mb-8">Обратная связь</h5>
-          <p className="text-base md:text-lg mb-4">
+          <h5 className="text-4xl font-bold mb-8 text-white">Обратная связь</h5>
+          <p className="text-base md:text-lg mb-4 text-white">
             Есть вопросы или предложения? Всегда рад помочь! Напишите мне через
             контактную форму, и я свяжусь с вами в ближайшее время. <br /> Мои
             контакты в социальных сетях:
