@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const HeroSection = ({ onScrollToContact }: {onScrollToContact: any}) => {
   return (
@@ -34,18 +35,15 @@ export const HeroSection = ({ onScrollToContact }: {onScrollToContact: any}) => 
               >
                 Написать мне
               </button>
-              <button
-                  onClick={() => {
-                    const link = document.createElement('a');
-                    link.href = '/cv/cv(Voinovich).pdf';
-                    link.download = 'cv(Voinovich).pdf';
-                    link.click();
-                  }}
-                  className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-red-800 hover:bg-slate-800 text-white mt-3">
+                <Link
+                    target='_blank'
+                    href="/cv/cv(Voinovich).pdf"
+                    className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-red-800 hover:bg-slate-800 text-white mt-3"
+                >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Скачать резюме
               </span>
-              </button>
+                </Link>
             </div>
           </motion.div>
           <motion.div
