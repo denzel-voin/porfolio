@@ -16,7 +16,7 @@ export const NavLinks: ILink[] = [
   },
 ];
 
-export const NavLink = ({ href, title }) => {
+export const NavLink = ({ href, title }: {href: string, title: string}) => {
   return (
     <Link
       href={href}

@@ -1,10 +1,10 @@
 "use client";
-import React, {forwardRef, useState} from "react";
+import React, {ForwardedRef, forwardRef, useState} from "react";
 import emailjs from "emailjs-com";
 import Link from "next/link";
 import Image from "next/image";
 
-export const EmailSection = forwardRef((props, ref) => {
+export const EmailSection = forwardRef((props, ref: ForwardedRef<any>) => {
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -32,7 +32,7 @@ export const EmailSection = forwardRef((props, ref) => {
       );
       setStatus("Сообщение успешно отправлено!");
       setFormData({ email: "", subject: "", message: "" });
-    } catch (error) {
+    } catch (error: any) {
       setStatus(`Ошибка отправки: ${error.message}`);
     }
   };
@@ -126,3 +126,5 @@ export const EmailSection = forwardRef((props, ref) => {
       </section>
   );
 });
+
+EmailSection.displayName = "EmailSection";

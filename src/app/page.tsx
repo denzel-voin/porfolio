@@ -7,11 +7,13 @@ import { EmailSection } from "@/app/components/EmailSection";
 import { useRef } from "react";
 
 export default function Home() {
-    const scrollToRef = useRef(null);
+    const scrollToRef = useRef<HTMLDivElement | null>(null);
 
     const handleScroll = () => {
         if (scrollToRef.current) {
-            scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+            if ("scrollIntoView" in scrollToRef.current) {
+                scrollToRef.current.scrollIntoView({behavior: "smooth"});
+            }
         }
     };
 

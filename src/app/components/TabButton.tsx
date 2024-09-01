@@ -1,4 +1,4 @@
-export const TabButton = ({ active, selectTab, children }) => {
+export const TabButton = ({ active, selectTab, children }: {active: boolean, selectTab: () => void, children: string }) => {
   const buttonClasses = active
     ? "text-white border-b border-purple-500"
     : "text-[#ADB7BE]";

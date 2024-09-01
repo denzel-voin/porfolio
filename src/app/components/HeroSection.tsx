@@ -2,9 +2,8 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import {useRef} from "react";
 
-export const HeroSection = ({ onScrollToContact }) => {
+export const HeroSection = ({ onScrollToContact }: {onScrollToContact: any}) => {
   return (
       <section>
         <div className="grid grid-cols-1 sm:grid-cols-12 justify-items-center md:justify-items-stretch items-center">
