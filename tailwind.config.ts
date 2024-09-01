@@ -2,8 +2,12 @@ import type { Config } from "tailwindcss";
 
 const config: {
   plugins: any[];
-  theme: { extend: { backgroundImage: { "gradient-conic": string; "gradient-radial": string } } };
-  content: string[]
+  theme: {
+    extend: {
+      backgroundImage: { "gradient-conic": string; "gradient-radial": string };
+    };
+  };
+  content: string[];
 } = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
