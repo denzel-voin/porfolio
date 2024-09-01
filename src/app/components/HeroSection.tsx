@@ -56,7 +56,7 @@ export const HeroSection = ({ onScrollToContact }: {onScrollToContact: any}) => 
           >
             <Image
                 className="rounded-lg mt-4 lg:mt-0"
-                src={require('/public/images/photo.jpeg')}
+                src='/images/photo.jpg'
                 alt="profile-photo"
                 width={300}
                 height={300}
