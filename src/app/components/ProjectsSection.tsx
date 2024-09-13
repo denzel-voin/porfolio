@@ -25,7 +25,7 @@ export const ProjectsSection = () => {
   return (
     <>
       <h2 id='projects' className="text-4xl font-bold mb-8 text-white">Мои проекты</h2>
-      <div>
+      <div className='flex gap-3 flex-wrap justify-center'>
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}

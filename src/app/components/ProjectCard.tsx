@@ -10,7 +10,7 @@ export const ProjectCard = ({
   previewUrl,
 }: IProjectCard) => {
   return (
-    <div>
+    <div className='w-[500px]'>
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgURL})`, backgroundSize: "cover" }}
