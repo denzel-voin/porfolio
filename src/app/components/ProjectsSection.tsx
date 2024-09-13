@@ -11,6 +11,14 @@ const projectsData: IProject[] = [
     gitUrl: "https://github.com/denzel-voin/anihub",
     previewUrl: "https://denzel-voin.github.io/anihub/",
   },
+    {
+        id: 2,
+        title: "Cryptowave",
+        description: "CryptoWave - по криптовалютам, созданный с использованием React и TypeScript. Сайт позволяет пользователям просматривать информацию о криптовалютах, а также получать последние новости.",
+        image: "/images/projects/cryptowave.PNG",
+        gitUrl: "https://github.com/denzel-voin/Cryptowave",
+        previewUrl: "https://denzel-voin.github.io/Cryptowave/",
+    }
 ];
 
 export const ProjectsSection = () => {
